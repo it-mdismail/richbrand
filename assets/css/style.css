@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Roboto:wght@100&display=swap');
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+ */
+
+/* common */
+a{
+  text-decoration: none;
+}
+.bg-master{
+  background-color: #252734;
+}
+.bg-master1{
+background-color: #2A2C39;
+}
+.text-master{
+  color: #858790;
+}
+.icon-hover:hover{
+  background: #f8f9fa;
+  color: #252734 !important;
+  transition: ease .8s;
+}
+body{
+    background-color: #F2F3F8;
+}
+.bg-light{
+    background-color: #F2F3F8;
+}
+.box-shadow{
+    box-shadow: 0 0 5px 1px #ca4d4d;
+    transition: 0.3s;
+}
+.hover-shadow:hover{
+    box-shadow: 0 0 10px 1px #9b9696;
+    background: #F2F3F8;
+    /* border: solid 1px; */
+    transition: 0.3s;
+}
+.hover-visible:hover{
+    visibility: visible;
+}
+.fs-small{
+    font-size: small;
+}
+.hover-opacity-100:hover{
+    opacity:1 !important;
+}
+/* common edn */
+/* testy custom animation using for hover start */
+.hover-ani,.hover-ani-1{
+  position: relative;
+  /* background: #252734; */
+  overflow: hidden;
+}
+.hover-ani:hover{
+  color: #00ffff !important;
+}
+.hover-ani::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #00ffff;
+  visibility: hidden;
+  transition:ease 1s;
+}
+.hover-ani:hover::before{
+  visibility: visible; 
+  left: 0;
+  background: transparent; 
+}
+.hover-ani-1::before{
+content: "";
+position: absolute;
+top: -100%;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #252734;
+visibility: hidden;
+transition:ease 1s;
+}
+.hover-ani-1:hover::before{
+visibility: visible; 
+top: 0;
+background: #252734;
+opacity: .2;
+}
+/* testy custom animation using for hover end */
+.category{
+    height: 50vh;
+}
+@media screen and (min-width: 768px) {
+    .slider {
+      height:50vh;
+    }
+  }
+  /* contacct sec start */
+  .contact-sec{
+    background: #111723;
+  }
+  .contact-sec .brand{
+    width: 200px;
+    height: 75px;
+  }
+  .get-in-touch .inner-get-in-touch{
+    background-image: url(../img/keyboard.png);
+    background-size:auto;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+  }
+  .get-in-touch .inner-get-in-touch img{
+    width: 70px;
+    height: auto;
+  }
+  .get-in-touch .inner-get-in-touch a:first-child:hover{
+    color: #ff0000 !important;
+    text-decoration: underline;
+  }
+  /* contact sec end */
+
+  /* footer start */
+
+  
+  /* footer end */
